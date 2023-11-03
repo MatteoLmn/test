@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hotel</title>
+</head>
+
+<body>
+    <center>
+            <h1>Votre reservation : </h1>
+    </center>
+
+<form method="get" action="#">
+
+	<label>Votre nom :<br>
+        
+        <input name="nom" type="text" placeholder="Entrez votre nom ici  " >  <br><br>
+
+    </label>
+
+    <label >Votre prenom :<br>
+        
+        <input name="prenom" type="text" placeholder="Entrez votre prenom ici  " >  <br><br>
+        
+    </label>
+            
+    <label >Votre numero :<br>
+        
+        <input name="numero" type="tel" placeholder=" votre numéro " >  <br><br>
+        
+    </label>
+
+    <label >Votre mail :<br>
+        
+        <input name="mail" type="email" placeholder=" exemple@exemple.com " >  <br><br>
+        
+    </label>
+
+
+    <label for="ville">Choisi une ville:</label>
+    <select id="ville" name="ville">
+        <option value="#">Choisir</option>
+        <option value="lille">Lille</option>
+        <option value="lens">Lens</option>
+        <option value="paris">Paris</option>
+        <option value="marseille">Marseille</option>
+        <option value="bruay">Bruay</option>
+        <option value="havre">Havre</option>
+        <option value="mont-saint-michel">Mont-Saint-Michel</option>
+        <option value="mulouse">Mulouse</option>
+        <option value="clais">Calais</option>
+        </select>   <br><br>
+
+    <label >date d'arrivée :<br> 
+        <input type="date"  name="date" min="2023-10-31"  required >
+      <span class="validity"></span>
+
+    </label>
+
+    <br><br>
+
+    <label >nombre de personne :<br>
+        
+        <input name="nombre" type="number"  min=1>  <br><br>
+        
+    </label>
+
+    <label for="bar">
+        <input type="checkbox" id="bar" name="bar"  />Mini bar</label>
+
+    <label for="clim">
+            <input type="checkbox" id="clim" name="clim"  />climatisation</label>
+
+            
+    <label for="jaccuzi">
+        <input type="checkbox" id="jaccuzi" name="jaccuzi"  />jaccuzi</label>
+
+        <br><br><br>
+       
+        <label for="oui">
+            <input type="radio" id="oui" name="cc"  /> j'accepte 
+        </label>
+        <label for="non">
+            <input type="radio" id="non" name="cc" checked /> je refuse 
+        </label>
+        <br><br>
+
+        <textarea placeholder="entre ton com"></textarea>
+
+				<br><br>
+
+			<input type="submit" value="envoye ma demande">
+
+    </form>
+			
+
+</body>
+</html>
